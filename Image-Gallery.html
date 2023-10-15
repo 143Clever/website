@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Movie Home Town</title>
+    <title>Movie Home Town - Image Gallery</title>
     <style>
         /* 设置主体内容的最小高度 */
         body {
@@ -12,37 +12,67 @@
             display: flex;
             flex-direction: column;
         }
-    
+
         .content-container {
             flex: 1;
             overflow-y: auto;
         }
-    
+
         /* 缩小图片 */
         img {
             max-width: 100%; /* 图像的最大宽度将适应其容器 */
             height: auto; /* 保持原始宽高比 */
         }
+
+        /* 设置图像库样式 */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 每行显示3张图片，可根据需要调整 */
+            gap: 20px; /* 图片之间的间隔 */
+            padding: 20px; /* 图库内容的内边距 */
+        }
+
+        /* 单个图像容器的样式 */
+        .image-container {
+            border: 1px solid #ddd; /* 边框样式，可根据需要调整 */
+            padding: 10px; /* 单个图像容器的内边距，可根据需要调整 */
+            text-align: center; /* 文本居中 */
+        }
     </style>
 </head>
 
 <body>
-    
     <header>
-        <h1>Movie Home Town</h1>
+        <h1>Movie Home Town - Image Gallery</h1>
         <nav>
             <ul>
                 <li><a href="index.htm">Home</a></li>
                 <li><a href="movie-list.html">Movie List</a></li>
-                
                 <li><a href="gallery.html">Image Gallery</a></li>
             </ul>
         </nav>
     </header>
 
-    
-    
+    <div class="content-container">
+        <div class="image-gallery">
+            <!-- 第一张图片 -->
+            <div class="image-container">
+                <img src="Star-wars-logo-new-tall.webp" alt="Image 1">
+                <p>Star wars</p>
+            </div>
+
+            <!-- 第二张图片 -->
+            <div class="image-container">
+                <img src="download (3).jpg" alt="Image 2">
+                <p>Startrek</p>
+            </div>
+
+            <!-- 第三张图片 -->
+            <div class="image-container">
+                <img src="download (4).jpg" alt="Image 3">
+                <p>Warhammer 40000</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-
