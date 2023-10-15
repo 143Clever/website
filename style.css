@@ -99,5 +99,5 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* 填充整个视口高度 */
+    min-height: 100vh; 
 }
